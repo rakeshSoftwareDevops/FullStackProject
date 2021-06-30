@@ -1,0 +1,8 @@
+APP_PORT=3108
+DB_PORT=3306
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=root
+MYSQL_DB=demo
+JWT_KEY=qwe1234
+
