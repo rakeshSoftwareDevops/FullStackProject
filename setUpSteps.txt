@@ -1,0 +1,24 @@
+1. For a node js Project Initially create a folder for the project and in the vs code write the command as npm init this will include the file of package.json
+2. After this creation and now open the sql as well in the side
+3. Now create the app.js file which will be your main file 
+4. After this install the express using command npm install express this will generate the node modules and package-lock.json
+5. In app.js Firstly write
+  const express=require("express");
+  const app=express();
+  get the express method and use it to do the api calls get post put delete
+6.Create a databse folder in that create a file named as config.js
+7.now To have connection with mysql use the below command
+  npm install mysql
+8.To hide the database username and password localhost port no 
+  and all we have to hide them so for that use the below command
+  npm install dotenv
+9.Here now To make it like after every save the content should gets automatically reloaded therefore use for that package as nodemon
+  npm install --save-dev nodemon
+10 use this in the package.json file     "start":"nodemon app.js"
+11 npm install bcrypt
+12 npm install jsonwebtoken
+13 After that run this two below commands
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+
+flush privileges;
+14. make the content-type:application/json in the postman

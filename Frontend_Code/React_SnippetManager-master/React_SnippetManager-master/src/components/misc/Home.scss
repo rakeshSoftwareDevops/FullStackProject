@@ -1,0 +1,36 @@
+ 
+ @import "../../styles/mixins.scss";
+ 
+ .home{
+     .btn-editor-toggle{
+         @include btn();
+         background: var(--light-color);
+     }
+     .no-snippets-msg{
+         color:var(--text-light-color);
+         margin-top: 2rem;
+         font-weight: bold;
+     }
+     .no-user-message{
+         margin-top: 2rem;
+         color:var(--test-light-color);
+         text-align: center;
+
+         h2{
+             font-size: 3rem;
+         }
+         a{
+             @include btn();
+             margin-top: 2rem;
+             color:var(--text-dark-color);
+             font-weight: unset;
+             background: var(--light-color);
+             display: inline-block;
+
+             &:hover{
+                 text-decoration: unset;
+             }
+         }
+
+     }
+ }
